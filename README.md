@@ -26,26 +26,41 @@ This project is a prototype Retrieval-Augmented Generation (RAG) system that all
 - **Query:**  
   Users can enter a question, which is sent to the backend. The answer is displayed in the UI.
 
-## Running Locally
+## Getting Started
 
-1. **Clone the repository and navigate to the backend directory.**
-2. **Install dependencies** (see `requirements.txt`).
-3. **Start the backend** (FastAPI):
-   ```sh
-   uvicorn main:app --reload --host 0.0.0.0 --port 8080
-   ```
-   - The backend will be available at [http://localhost:8080](http://localhost:8080) (Swagger docs at [http://localhost:8080/docs](http://localhost:8080/docs))
-4. **Start the frontend** (React):
-   ```sh
-   cd rag-frontend
-   npm install
-   npm start
-   ```
-   - The frontend will be available at [http://localhost:3000](http://localhost:3000)
-5. **(Optional) Docker Compose:**  
-   You can use `docker-compose up --build` to run both backend and frontend in containers.
-   - The backend will be available at port **8080**
-   - The frontend will be available at port **3000**
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/barath-2002/Doccument_summarizer.git
+cd Doccument_summarizer
+```
+
+### 2. Install and Run Backend (FastAPI)
+
+```sh
+cd fastapi-template
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
+```
+- The backend will be available at [http://localhost:8080](http://localhost:8080) (Swagger docs at [http://localhost:8080/docs](http://localhost:8080/docs))
+
+### 3. Install and Run Frontend (React)
+
+```sh
+cd rag-frontend
+npm install
+npm start
+```
+- The frontend will be available at [http://localhost:3000](http://localhost:3000)
+
+### 4. (Optional) Run with Docker Compose
+
+```sh
+cd fastapi-template
+docker-compose up --build
+```
+- The backend will be available at port **8080**
+- The frontend will be available at port **3000**
 
 ## Requirements
 
