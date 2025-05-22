@@ -1,0 +1,13 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+.result {
+  margin-top: 30px;
+}
+.summary {
+  white-space: pre-wrap;
+  background: #f7f7f7;
+  padding: 10px;
+}
